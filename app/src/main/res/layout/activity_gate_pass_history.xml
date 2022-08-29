@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ActivityBackground"
+    tools:context=".GatePassHistoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:background="@color/ButtonBottom"
+            android:text="My Gate Pass List"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+<ListView
+    android:layout_marginRight="7dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="7dp"
+    android:layout_below="@+id/title"
+    android:id="@+id/gatepassListView"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+<!--        tools:listitem="@layout/gate_pass_list"-->
+
+
+
+        <ProgressBar
+            android:id="@+id/ljavaprog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/custom_progress_bar"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

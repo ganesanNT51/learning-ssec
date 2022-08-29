@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    >
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:foreground="@drawable/ripple"
+        android:background="@drawable/border_one"
+
+        >
+<!--        android:foreground="@drawable/ripple"-->
+<!--        android:background="@drawable/border_one"-->
+
+
+        <TextView
+            android:id="@+id/gate_pass_id_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/title_background"
+            android:padding="5dp"
+            android:text="Gete Pass ID : 202205854225"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+<!--        android:background="@drawable/title_background"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:layout_marginTop="5dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Date"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_gravity="end"
+
+                android:layout_marginRight="3dp"
+                />
+
+
+            <TextView
+                android:id="@+id/RequetDate_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02/05/2022"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:paddingRight="3dp"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+
+                />
+        </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/reason_tv"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason : Reason 1"
+                android:layout_gravity="start"
+
+                android:paddingRight="3dp"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+
+                />
+
+            <TextView
+                android:id="@+id/RequestTo_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request To : HoD"
+
+                android:layout_gravity="start"
+                android:paddingRight="3dp"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+
+                />
+
+        <TextView
+            android:id="@+id/ReturnDate_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return Date : 12/06/2022"
+
+            android:layout_gravity="end"
+            android:paddingRight="3dp"
+            android:layout_marginTop="5dp"
+            android:textSize="17dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/Request_status_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gatepass Status : Pending"
+
+            android:layout_gravity="end"
+            android:paddingRight="3dp"
+            android:layout_marginTop="5dp"
+            android:textSize="17dp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+</RelativeLayout>

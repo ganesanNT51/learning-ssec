@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    >
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:foreground="@drawable/ripple"
+        android:background="@drawable/border_one">
+
+
+        <TextView
+            android:id="@+id/remarkId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/title_background"
+            android:padding="5dp"
+            android:text="Remark ID : 202205854225"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:padding="1.5dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/remarktitleoutline"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/remarkTitle"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Attendance issues"-->
+<!--                android:layout_marginLeft="5dp"-->
+
+<!--                android:layout_gravity="center"-->
+<!--                android:paddingRight="3dp"-->
+
+<!--                android:textSize="14dp"-->
+
+
+<!--                />-->
+
+
+
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/calendaroutline"/>
+
+            <TextView
+                android:id="@+id/remarkDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02/05/2022"
+                android:layout_marginLeft="5dp"
+
+                android:layout_gravity="center"
+                android:paddingRight="3dp"
+
+                android:textSize="14dp"
+                android:textColor="@color/black"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/personoutline"/>
+
+            <TextView
+                android:id="@+id/remarkedBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remarked By : Prakash"
+                android:layout_marginLeft="5dp"
+
+                android:layout_gravity="center"
+                android:paddingRight="3dp"
+
+                android:textSize="14dp"
+                android:textColor="@color/black"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textStyle="bold"
+
+            android:layout_gravity="start"
+            android:paddingRight="3dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:id="@+id/remarkDisc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Students may misbehave by missing class, leaving class early, packing up before class is over, showing up late, or engaging in excessive leaving and returning behavior."
+
+            android:layout_gravity="end"
+            android:paddingRight="3dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+</RelativeLayout>

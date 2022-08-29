@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SSEC</string>
+
+
+    <string-array name="Reason">
+        <item>Please Select Reason</item>
+        <item>Reason1</item>
+        <item>Reason2</item>
+        <item>Reason2</item>
+    </string-array>
+    <string-array name="RequestTo">
+        <item>To whom are you placing the request</item>
+        <item>HoD</item>
+        <item>Principal</item>
+        <item>Warden</item>
+    </string-array>
+    <string-array name="internal">
+        <item>Please Select Internal</item>
+        <item>Internal 1</item>
+        <item>Internal 2</item>
+        <item>Internal 3</item>
+    </string-array>
+    <string-array name="semester">
+        <item>Please Select Semester</item>
+        <item>First Semester</item>
+        <item>Second Semeter</item>
+        <item>Third  Semeter</item>
+        <item>Fourth  Semeter</item>
+        <item>Fifth  Semeter</item>
+        <item>Sixth  Semeter</item>
+        <item>Seventh   Semeter</item>
+        <item>Eighth   Semeter</item>
+
+
+    </string-array>
+</resources>

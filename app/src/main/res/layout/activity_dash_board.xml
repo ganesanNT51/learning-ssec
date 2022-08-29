@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DashBoardActivity"
+    android:background="#fff2e6">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="0dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardMaxElevation="12dp"
+                    android:id="@+id/SliderImageView"
+                    app:cardPreventCornerOverlap="true"
+
+                    >
+
+
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/SliderImage"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@mipmap/bannernew" />-->
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/slider"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/SliderImageView"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:ellipsize="marquee"
+                    android:gravity="bottom|center_horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="Inter O Fest’22 – One Day National Level Technical Symposium – 20th May 2022    ||   International Conference on Emerging Trends in Science Technology and Applications (ICETSTA-2022) – 27th and 28th May 2022"
+                    android:textColor="@color/Text_Color"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/quickoption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/notification"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Quick Options"
+                    android:textColor="@color/Text_Color"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/one"
+                    android:layout_below="@+id/quickoption"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:weightSum="3">
+
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            app:cardCornerRadius="45dp"
+                            android:shape="ring"
+                            app:cardElevation="10dp">
+                            <ImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/profileimg"
+                                android:layout_width="70dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/profileoutline"
+                                android:layout_height="90dp"
+                                />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:textSize="17dp"
+                            android:text="Profile "
+                            android:textAlignment="center"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            app:cardCornerRadius="45dp"
+                            android:shape="ring"
+                            app:cardElevation="10dp">
+
+                            <ImageView
+                                android:id="@+id/Resultimg"
+                                android:layout_width="60dp"
+
+                                android:layout_height="60dp"
+                                android:src="@drawable/markoutline"
+
+                                android:layout_gravity="center"
+                                />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:textSize="17dp"
+                            android:text="Internal Marks"
+                            android:textAlignment="center"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            app:cardCornerRadius="45dp"
+                            android:shape="ring"
+                            app:cardElevation="10dp">
+                            <ImageView
+                                android:padding="5dp"
+                                android:id="@+id/ApplyGatepassimg"
+                                android:layout_width="70dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/gateoutline"
+                                android:layout_height="70dp"
+                                />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:textSize="17dp"
+                            android:text="Apply Gate Pass"
+                            android:textAlignment="center"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/two"
+                    android:layout_below="@+id/one"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            app:cardCornerRadius="45dp"
+                            android:shape="ring"
+                            app:cardElevation="10dp">
+                            <ImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/Remarks"
+                                android:layout_width="60dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/remarksoutline"
+                                android:layout_height="60dp"
+                                />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:textSize="17dp"
+                            android:text="Remarks"
+                            android:textAlignment="center"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            app:cardCornerRadius="45dp"
+                            android:shape="ring"
+                            app:cardElevation="10dp">
+                            <ImageView
+                                android:id="@+id/questionbank"
+                                android:layout_width="60dp"
+
+                                android:layout_height="60dp"
+                                android:src="@drawable/quetionbankoutline"
+
+                                android:layout_gravity="center"
+                                />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:textSize="17dp"
+                            android:text="Question Bank"
+                            android:textAlignment="center"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            app:cardCornerRadius="45dp"
+                            android:shape="ring"
+                            app:cardElevation="10dp">
+                            <ImageView
+
+                                android:id="@+id/latecomers"
+                                android:layout_width="60dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/latecomersoutline"
+                                android:layout_height="60dp"
+                                />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:textSize="17dp"
+                            android:text="Late comers "
+                            android:textAlignment="center"
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/three"
+                    android:layout_below="@+id/two"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            app:cardCornerRadius="45dp"
+                            android:shape="ring"
+                            app:cardElevation="10dp">
+                            <ImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/gatepasslistimg"
+                                android:layout_width="60dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/recordoutline"
+                                android:layout_height="60dp"
+                                />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:textSize="17dp"
+                            android:text="Gate pass Records"
+                            android:textAlignment="center"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            app:cardCornerRadius="45dp"
+                            android:shape="ring"
+                            app:cardElevation="10dp">
+                            <ImageView
+                                android:id="@+id/ShareFriends"
+                                android:layout_width="60dp"
+
+                                android:layout_height="60dp"
+                                android:src="@drawable/shareoutline"
+
+                                android:layout_gravity="center"
+                                />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:textSize="17dp"
+                            android:text="Share Friends"
+                            android:textAlignment="center"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" app:cardCornerRadius="45dp"
+                            android:shape="ring"
+                            app:cardElevation="10dp">
+                            <ImageView
+
+                                android:id="@+id/offcampusimg"
+                                android:padding="5dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/offcampusoutline"
+
+                                />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:textSize="14dp"
+                            android:text="Off campus"
+                            android:textAlignment="center"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <!-- four row start -->
+                <LinearLayout
+                    android:id="@+id/four"
+                    android:layout_below="@+id/three"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:weightSum="3">
+
+
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            app:cardCornerRadius="45dp"
+                            android:shape="ring"
+                            app:cardElevation="10dp">
+                            <ImageView
+
+                                android:id="@+id/logout"
+                                android:layout_width="60dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/exiteoutline"
+                                android:layout_height="60dp"
+                                />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:textSize="17dp"
+                            android:text="Log Out"
+                            android:textAlignment="center"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <!-- four row end  -->
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

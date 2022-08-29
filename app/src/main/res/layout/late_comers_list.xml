@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        >
+
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/calendaroutline"/>
+
+            <TextView
+                android:id="@+id/arrival_time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02/08/2022"
+                android:layout_marginLeft="5dp"
+
+                android:layout_gravity="center"
+                android:paddingRight="3dp"
+
+                android:textSize="14dp"
+                android:textColor="@color/black"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/layout"
+        android:id="@+id/divider"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+
+</RelativeLayout>

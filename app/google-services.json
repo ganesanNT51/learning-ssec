@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "78253317944",
+    "project_id": "ssec-33648",
+    "storage_bucket": "ssec-33648.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78253317944:android:d8bc3ab364139f266e6bcd",
+        "android_client_info": {
+          "package_name": "com.purpleworldtechnology.ssec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78253317944-lbopa14esg0f3tja7bjnp1pq49k3qrim.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.purpleworldtechnology.ssec",
+            "certificate_hash": "54cc5dfdade20752ec3a57840fb659998e302bfc"
+          }
+        },
+        {
+          "client_id": "78253317944-so8hoq4uq783t6dedtv0vpt3kd6h4pb2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0-HE9KD24uvX7EZUxe3Mzc5PtOQPJ4Eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78253317944-so8hoq4uq783t6dedtv0vpt3kd6h4pb2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
